@@ -1,0 +1,99 @@
+/* Simple Dark Mode Test CSS */
+
+/* Light mode (default) */
+body {
+    background-color: #ffffff;
+    color: #000000;
+    transition: all 0.3s ease;
+}
+
+/* Dark mode */
+body.dark-mode {
+    background-color: #1a1a1a !important;
+    color: #ffffff !important;
+}
+
+body.dark-mode .sidebar {
+    background-color: #2d2d2d !important;
+    border-right-color: #444444 !important;
+}
+
+body.dark-mode .sidebar-menu .nav-link {
+    color: #ffffff !important;
+}
+
+body.dark-mode .sidebar-menu .nav-link:hover {
+    background-color: #444444 !important;
+    color: #4d9fff !important;
+}
+
+body.dark-mode .project-card {
+    background-color: #2d2d2d !important;
+    border-color: #444444 !important;
+    color: #ffffff !important;
+}
+
+body.dark-mode .project-title {
+    color: #ffffff !important;
+}
+
+body.dark-mode .project-description {
+    color: #cccccc !important;
+}
+
+body.dark-mode .page-title {
+    color: #ffffff !important;
+}
+
+body.dark-mode .page-subtitle {
+    color: #cccccc !important;
+}
+
+body.dark-mode .main-content {
+    background-color: #1a1a1a !important;
+}
+
+/* Theme toggle button styling */
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    background: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1);
+}
+
+body.dark-mode .theme-toggle {
+    background: #2d2d2d;
+    border-color: #444;
+    color: #fff;
+}
+
+/* Icon switching */
+.theme-toggle .sun-icon {
+    display: block;
+}
+
+.theme-toggle .moon-icon {
+    display: none;
+}
+
+body.dark-mode .theme-toggle .sun-icon {
+    display: none;
+}
+
+body.dark-mode .theme-toggle .moon-icon {
+    display: block;
+}
